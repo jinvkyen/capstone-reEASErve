@@ -1,0 +1,248 @@
+*{
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+ ::-webkit-scrollbar-track {
+  background: #d1d1d1;
+}
+
+ ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.content-container {
+    margin-left: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-content {
+    margin: 20px;
+    background-color: var(--custom-color);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.image-container {
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-container {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bot-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .back-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .submit-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .left-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.top-section {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.bot-section {
+    display: flex;
+    margin-top: 50px;
+}
+
+.back-btn {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-container {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--custom-color);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Fields Style */
+
+.fields-container {
+    padding: 10px;
+}
+
+#input-fields {
+    border-width: 1.5px;
+    border-color: #b3b3b3;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+#input-fields:focus {
+    outline: none;
+    box-shadow: 0 0 4px gray;
+}
+
+.datetime {
+    border-width: 1.5px;
+    border-color: #b3b3b3;
+    border-radius: 5px;
+    border: 1px solid dimgray;
+    padding: 5px;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    color: gray;
+}
+
+.datetime:focus {
+    outline: none;
+    box-shadow: 0 0 4px gray;
+}
+
+
+#dropdown-button {
+    text-align: left;
+    background-color: white;
+    color: gray;
+    height: 40px;
+    border-width: 1.5px;
+    border-color: #b3b3b3;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#dropdown-button:focus {
+    outline: none;
+    box-shadow: 0 0 4px gray;
+}
+
+
+/* Reserve Resources Buttons */
+.image-buttons {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-side-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
